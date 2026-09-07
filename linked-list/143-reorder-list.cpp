@@ -27,16 +27,15 @@ void reorderList(ListNode* head) {
     }
 
     // reverse the half linked list
-    ListNode* half = slow->next;
-    ListNode* current = half;
+    ListNode* current = slow->next;
     ListNode* prev = nullptr;
+    slow->next = nullptr;
     while (current != nullptr) {
         ListNode* nextNode = current->next;
         current->next = prev;
         prev = current;
         current = nextNode;
     }
-    slow->next = nullptr;
 
     // merge the two linked lists
     ListNode* first = head;
