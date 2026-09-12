@@ -12,4 +12,4 @@ A comprehensive collection of LeetCode solutions in C++, focusing on data struct
 
 | Topic | Problems |
 |-------|----------|
-| [Linked List](./linked-list) | 4 |
+| [Linked List](./linked-list) | 6 |
