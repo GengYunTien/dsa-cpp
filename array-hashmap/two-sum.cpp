@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
+// Solution: hashmap to store seen numbers and their indices
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+vector<int> twoSum(vector<int>& nums, int target) {
+    unordered_map<int, int> m;
+    for (int i = 0; i < nums.size(); i++) {
+        int complement = target - nums[i];
+        if (m.find(complement) != m.end()) {
+            return {m[complement], i};
+        }
+        m[nums[i]] = i;
+    }
+    return {};
+}
