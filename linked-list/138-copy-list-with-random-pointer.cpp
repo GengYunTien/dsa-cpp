@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 // Definition for a Node.
 class Node {
     public:
