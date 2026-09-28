@@ -1,0 +1,16 @@
+#include <vector>
+using namespace std;
+
+// Solution: preallocate 2n array and fill both halves in one pass
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+vector<int> getConcatenation(vector<int>& nums) {
+    int n = nums.size();
+    vector<int> ans(2 * n);
+
+    for (int i = 0; i < n; i++) {
+        ans[i] = nums[i];
+        ans[i + n] = nums[i];
+    }
+    return ans;
+}
