@@ -40,7 +40,7 @@ TreeNode* invertTreewithStack(TreeNode* root) {
     stack<TreeNode*> stk;
     stk.push(root);
 
-    while(!stk.empty()) {
+    while (!stk.empty()) {
         TreeNode* node = stk.top();
         stk.pop();
 
@@ -68,7 +68,7 @@ TreeNode* invertTreewithQueue(TreeNode* root) {
     queue<TreeNode*> q;
     q.push(root);
 
-    while(!q.empty()) {
+    while (!q.empty()) {
         TreeNode* node = q.front();
         q.pop();
 

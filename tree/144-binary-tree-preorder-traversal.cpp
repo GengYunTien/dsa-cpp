@@ -46,7 +46,7 @@ vector<int> preorderTraversalwithStack(TreeNode* root) {
     stack<TreeNode*> stk;
     stk.push(root);
 
-    while(!stk.empty()) {
+    while (!stk.empty()) {
         TreeNode* node = stk.top();
         stk.pop();
         ans.push_back(node->val);
