@@ -48,7 +48,7 @@ vector<int> inorderTraversalwithStack(TreeNode* root) {
     TreeNode* current = root;
 
     while (current != nullptr || !stk.empty()) {
-        while(current != nullptr) {
+        while (current != nullptr) {
             stk.push(current);
             current = current->left;
         }
