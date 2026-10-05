@@ -8,7 +8,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-// Solution: iterative - use BST property to find split point
+// Solution 1: iterative - use BST property to find split point
 // - if both p and q are smaller than root, go left
 // - if both p and q are larger than root, go right
 // - otherwise, root is the lowest common ancestor
