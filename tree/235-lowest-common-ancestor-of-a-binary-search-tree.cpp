@@ -35,16 +35,16 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 // - otherwise, root is the lowest common ancestor
 // Time Complexity: O(h) - O(log n) for balanced BST, O(n) for skewed tree
 // Space Complexity: O(h) - recursion call stack
-TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+TreeNode* lowestCommonAncestorWithRecursive(TreeNode* root, TreeNode* p, TreeNode* q) {
     if (root == nullptr) {
         return nullptr;
     }
 
     if (p->val < root->val && q->val < root->val) {
-        return lowestCommonAncestor(root->left, p, q);
+        return lowestCommonAncestorWithRecursive(root->left, p, q);
     }
     else if (p->val > root->val && q->val > root->val) {
-        return lowestCommonAncestor(root->right, p, q);
+        return lowestCommonAncestorWithRecursive(root->right, p, q);
     }
     else {
         return root;
