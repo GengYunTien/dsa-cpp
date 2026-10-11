@@ -40,7 +40,7 @@ TreeNode* insertIntoBSTusingIterative(TreeNode* root, int val) {
     }
 
     TreeNode* current = root;
-    while(true) {
+    while (true) {
         if (current->val > val) {
             if (current->left == nullptr) {
                 current->left = new TreeNode(val);
