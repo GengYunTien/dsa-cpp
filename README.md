@@ -13,7 +13,7 @@ A comprehensive collection of LeetCode solutions in C++, focusing on data struct
 | Topic | Problems |
 |-------|----------|
 | [Linked List](./linked-list) | 13 |
-| [Tree](./tree) | 14 |
+| [Tree](./tree) | 15 |
 | [Graph] | 0 |
 | [Array & Hashmap](./array-hashmap) | 4 |
 | [Two Pointers](./two-pointers/) | 1 |
