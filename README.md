@@ -16,5 +16,5 @@ A comprehensive collection of LeetCode solutions in C++, focusing on data struct
 | [Tree](./tree) | 14 |
 | [Graph] | 0 |
 | [Array & Hashmap](./array-hashmap) | 4 |
-| [Stack] | 0 |
+| [Two Pointers](./two-pointers/) | 1 |
 | [Binary Search] | 0 |
